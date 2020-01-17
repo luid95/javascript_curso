@@ -1,0 +1,4 @@
+git init
+git commit -m "var, let const "
+git remote add origin https://github.com/luid95/javascript_curso.git
+git push -u origin master
