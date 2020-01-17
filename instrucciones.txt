@@ -2,6 +2,6 @@ git init
 git status
 git add .
 git status
-git commit -m "var, let const parte 2 "
+git commit -m "DOM Javascript "
 git remote add origin https://github.com/luid95/javascript_curso.git
 git push -u origin master
