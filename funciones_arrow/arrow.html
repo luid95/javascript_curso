@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funcion ARROW</title>
+</head>
+<body>
+    <h1 id="saludo"></h1>
+
+    <h2 id="suma">El resultado de la suma es: </h2>
+
+    <h3 id="suma2">El resultado de la suma 2 es:</h3>
+
+    <script>
+        var saludoId = document.getElementById("saludo");
+
+        // function saludar(nombre) {
+        //     return "Hola " +nombre;
+        // }
+
+        //o podemos declarar la funcion con arrow de la siguiente manera
+        var saludar = nombre => "Hola "+nombre;
+
+        saludoId.innerHTML = saludar("Luis");
+
+        //////////////////////////////////////////////
+
+        var sumaId = document.getElementById("suma");
+
+        var sumar = (num1 , num2) => num1+num2;
+
+        suma.innerHTML += sumar(10, 20);
+
+        /////////////////////////////////////////////
+
+        var suma2Id = document.getElementById("suma2");
+
+        var sumar2 = (num1 , num2) =>{
+            var r =30;
+            return num1+num2+r;
+        };
+
+        suma2.innerHTML += sumar2(20, 20);
+    </script>
+</body>
+</html>

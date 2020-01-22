@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <title>DOM- Document Object Model</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Hola soy un documento en HTML</h1>
+
+        <p id="parrafo" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Suscipit eaque voluptas ad harum! Laborum ipsum recusandae sunt laudantium dicta. 
+                        Culpa, aspernatur quas delectus quis maiores omnis sequi! Ratione, assumenda repellat.</p>
+
+        <p id="parrafo2" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Suscipit eaque voluptas ad harum! Laborum ipsum recusandae sunt laudantium dicta. 
+                        Culpa, aspernatur quas delectus quis maiores omnis sequi! Ratione, assumenda repellat.</p>
+
+        <button id="boton" class="btn btn-info">Cambiar</button>
+    </div>
+    <script>
+
+        console.log("Dom.js cargado...");
+
+        var h1 = document.getElementById("titulo");
+
+        console.log(h1.innerHTML);
+
+        h1.style.color = "red";//cabio de color de letra
+        //edicion del background
+        h1.style.background = "blue";
+    </script>
+    <script>
+        //accedemos ahora al parrafo
+        var parrafo = document.getElementById('parrafo');
+        parrafo.style.color = "olive";
+    </script>
+    <script>
+        //acceder desde nombre de clase
+        var c_parrafo = document.getElementsByClassName("lead")
+        console.log(c_parrafo[0]);
+
+    </script>
+    <script>
+        //para acceder a un elemento especifico mediante su id
+        var parrafo = document.querySelector("#parrafo")
+        console.log(parrafo);
+
+        //acceder a todos los elementos del mismo tipo 
+        var p = document.querySelectorAll("p");
+        console.log(p);        
+    </script>
+    <script>
+        //eventos
+        var boton = document.getElementById('boton');
+
+        boton.addEventListener('mouseover', function(){
+            console.log("He detectado el raton");
+            
+        });
+
+        boton.addEventListener('mouseout', function(){
+            console.log("Adios raton");
+            
+        });
+    </script>
+</body>
+</html>
