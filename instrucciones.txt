@@ -2,6 +2,6 @@ git init
 git status
 git add .
 git status
-git commit -m "FETCH "
+git commit -m "API json "
 git remote add origin https://github.com/luid95/javascript_curso.git
 git push -u origin master
