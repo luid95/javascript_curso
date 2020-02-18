@@ -2,8 +2,8 @@ git init
 git status
 git add .
 git status
-git commit -m "fetch post "
+git commit -m "POO js "
 git remote add origin https://github.com/luid95/javascript_curso.git
 git push -u origin master
 
-video 11
+video 13 listo
