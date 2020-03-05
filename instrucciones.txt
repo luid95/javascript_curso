@@ -2,8 +2,8 @@ git init
 git status
 git add .
 git status
-git commit -m "AJAX XMLHttpRequest "
+git commit -m "Event Delegation "
 git remote add origin https://github.com/luid95/javascript_curso.git
 git push -u origin master
 
-video 14 listo
+video 18 listo
