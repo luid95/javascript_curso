@@ -2,7 +2,7 @@ git init
 git status
 git add .
 git status
-git commit -m "Event Delegation "
+git commit -m "localStorage "
 git remote add origin https://github.com/luid95/javascript_curso.git
 git push -u origin master
 
